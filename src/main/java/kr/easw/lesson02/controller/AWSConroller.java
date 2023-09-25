@@ -28,6 +28,8 @@ public class AWSConroller {
 
     @GetMapping("/list")
     private List<String> onFileList() {
+        System.out.println(awsController.getFileList());
+        System.out.println(awsController.getFileInfoList());
         return awsController.getFileList();
     }
 
@@ -47,10 +49,16 @@ public class AWSConroller {
     private ModelAndView onDownload(@RequestParam String fileName) {
         try {
            // 이곳에 파일 다운로드 로직, 혹은 서비스를 통한 다운로드 호출을 구현하십시오.
+
            throw new IllegalStateException("기능이 구현되지 않았습니다.");
         } catch (Throwable e) {
             return new ModelAndView("redirect:/server-error?errorStatus=" + e.getMessage());
         }
+    }
+    @GetMapping("/info")
+    private List<String> onFileInfoList() {
+        System.out.println(awsController.getFileInfoList());
+        return awsController.getFileInfoList();
     }
 
 }

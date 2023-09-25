@@ -15,7 +15,9 @@ public class BaseWebController {
     @RequestMapping("/")
     public ModelAndView onIndex() {
         if (awsController.isInitialized()) {
-            return new ModelAndView("upload.html");
+            //return new ModelAndView("upload.html");
+            //auth 후 최상위 url 에서 upload.html 에서 업로드시 에러 수정
+            return new ModelAndView("redirect:/upload");
         }
         return new ModelAndView("request_aws_key.html");
     }
@@ -41,4 +43,5 @@ public class BaseWebController {
         }
         return new ModelAndView("request_aws_key.html");
     }
+
 }

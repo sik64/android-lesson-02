@@ -1,0 +1,31 @@
+[33mcommit 76866f8c5340d61943b63be5097a879fb834e944[m[33m ([m[1;36mHEAD[m[33m)[m
+Author: mooneunsik <ansdms64@naver.com>
+Date:   Sat Sep 30 23:51:36 2023 +0900
+
+    - README.md 추가
+
+[33mcommit 8f0b7253c5e4db7a26dd3d0bad07738c5c7790b7[m
+Author: mooneunsik <ansdms64@naver.com>
+Date:   Sat Sep 30 23:45:17 2023 +0900
+
+    - 자동생성 및 삭제되는 버킷이름의 접두어를 "easy-random-bucket-" 으로 변경
+    - 다운로드 기능 추가
+    - 다운로드 버튼 추가
+
+[33mcommit 78cc23163d464ed6ae1759f5246ed9c2f81e277e[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mregame[m[33m, [m[1;32mmaster[m[33m)[m
+Author: mooneunsik <ansdms64@naver.com>
+Date:   Mon Sep 25 22:51:57 2023 +0900
+
+    1.2 업로드, 다운로드 리스트 완료
+
+[33mcommit 4afede467b2616c761e80a51561242a628cf0641[m
+Author: milkyway0308 <skywolf461@gmail.com>
+Date:   Mon Sep 25 14:20:33 2023 +0900
+
+    fix: 앱 실행시, 기존 생성된 버킷을 제거하지 않던 오류 수정
+
+[33mcommit 3ba98f6808b1a7fe014044da9bf17889c83001c1[m
+Author: skywolf46 <skywolf461@gmail.com>
+Date:   Mon Sep 25 12:48:17 2023 +0900
+
+    feat: 프로젝트 업로드

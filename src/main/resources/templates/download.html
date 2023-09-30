@@ -13,6 +13,10 @@
     <span>파일 목록을 불러오는 예제에 대해서는 <a href="https://github.com/java-lesson-cbnu/android-lesson-01">이전 예제 레포지토리</a>를 참고하세요. </span>
     <ul id="fileList">
     </ul>
+    <form method="post" action="api/v1/rest/aws/download" enctype="multipart/form-data">>
+        <input name = "fileName" type="text"/><br/>
+        <input type="submit" value="다운로드"/><br/>
+    </form>
 
 <!--    <script type="application/javascript">-->
     <script>
@@ -21,9 +25,28 @@
           const result = await response.json();
           console.log(result);
           for (let i = 0; i < result.length; i++) {
-              let li = document.createElement("li");
-              li.appendChild(document.createTextNode(result[i]));
-              document.getElementById("fileList").appendChild(li);
+            let li = document.createElement("li");
+
+            var newForm = document.createElement('form');
+            newForm.method = 'post';
+            newForm.action = 'api/v1/rest/aws/download';
+            newForm.enctype= "multipart/form-data";
+
+            var inputKey = document.createElement('input');
+            var inputSub = document.createElement('input');
+
+            inputKey.setAttribute("type", "hidden");
+            inputKey.setAttribute("name", "fileName");
+            inputKey.setAttribute("value", result[i]);
+            inputSub.setAttribute("type", "submit");
+            inputSub.setAttribute("value", "다운로드");
+            newForm.appendChild(inputKey);
+            newForm.appendChild(inputSub);
+            newForm.setAttribute("style","display: inline-block");
+            li.appendChild(document.createTextNode(result[i]));
+            li.appendChild(newForm);
+
+            document.getElementById("fileList").appendChild(li);
           }
         })()
     </script>

@@ -17,3 +17,12 @@
 
 강의 시간 종료 후, 모르는 내용 혹은 질문이 있다면 [skywolf461@gmail.com](mailto://skywolf461@gmail.com)으로 메일을 전송하세요.
 
+< 과제 완료 >
+- 업로드 기능 구현
+- 파일 리스트 페이지 구현
+- 다운로드 기능 구현
+- 자동 생성 및 삭제되는 버킷 이름 변경 
+  - "easw-random-bucket-" -> "easy-random-bucket-"
+- 구현 영상 https://youtu.be/Zo2rx_ferVg
+- java 17
+- Spring Boot 3.1.3
